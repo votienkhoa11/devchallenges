@@ -24,6 +24,8 @@ module.exports = {
             'red-persian': '#D32F2F',
             'orange-portland': '#F7542E',
             'blue-black': '#090F31',
+            'gray-1': '#BDBDBD',
+            'blue-58': '#2F80ED',
         }   
     },
   },

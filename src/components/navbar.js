@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -16,6 +17,11 @@ function Navbar() {
                     <li>
                         <Link to='/inputs'>
                             <p class='text-[20px] font-medium text-gray active:text-blue-black focus:text-blue-black'>Inputs</p>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/todos'>
+                            <p class='text-[20px] font-medium text-gray active:text-blue-black focus:text-blue-black'>Todo List</p>
                         </Link>
                     </li>
                 </ul>

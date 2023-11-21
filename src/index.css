@@ -11,7 +11,7 @@
     }
 
     button {
-        @apply px-4 py-2 rounded-md gap-2
+        @apply px-4 rounded-md gap-2 h-[36px]
     }
 
     input {
@@ -31,4 +31,8 @@
     .input-primary {
         @apply flex align-middle items-center rounded-[8px] border-[1px] overflow-hidden px-2 py-2 gap-2 hover:border-dark-charcoal h-[56px] w-[200px]
     }
+
+    .button-tab {
+        @apply w-[89px] h-[40px] focus:border-b-[4px] rounded-none text-[16px] font-semibold items-center p-0 border-blue-58
+    } 
 }
