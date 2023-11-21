@@ -41,11 +41,11 @@ function Button() {
                     <icons.AddShoppingCartIcon fontSize='18px'/>
                 </button>
             </div>
-            <div className='p-4'>
+            <div className='items-center p-4 align-middle'>
                 <button 
-                    className=' bg-blue mr-4 h-[32px]'
+                    className=' bg-blue mr-4 h-[32px] align-middle items-center'
                 >
-                   <text className='text-[14px] text-white font-medium text-center'>Default</text>
+                   <text className='text-[14px] text-white font-medium'>Default</text>
                 </button>
                 <button 
                     className='text-[14px] text-white font-medium mr-4 bg-blue h-[36px]'
