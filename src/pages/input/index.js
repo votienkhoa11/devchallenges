@@ -4,7 +4,7 @@ import icons from '../../values/icon'
 
 function Inputs() {
   return (
-        <div className='p-4 gap-y-8'>
+        <div className='w-full h-full p-4 gap-y-8'>
             <h1 className='text-[24px] font-medium text-black' >Inputs</h1>
             <form className='flex-col py-2 my-2'>
                 <Input 

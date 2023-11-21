@@ -8,6 +8,7 @@ module.exports = {
         colors: {
             'white-charcoal': '#E0E0E0',
             'white-flash': ' #F2F2F2',
+            'white-ghost': '#FAFBFD',
             'dark-charcoal': '#333333',
             'black-olive': '#3F3F3F',
             'silver-foil': '#AEAEAE',
@@ -21,6 +22,8 @@ module.exports = {
             'blue-yankees': '#1C313A',
             'red-crimson': '#9A0007',
             'red-persian': '#D32F2F',
+            'orange-portland': '#F7542E',
+            'blue-black': '#090F31',
         }   
     },
   },

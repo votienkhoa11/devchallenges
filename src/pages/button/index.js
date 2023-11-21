@@ -3,7 +3,7 @@ import icons from '../../values/icon'
 
 function Button() {
   return (
-        <div className='p-4 gap-y-8' >
+        <div className='w-full h-full p-4 gap-y-8' >
             <h1 className='text-[24px] font-medium text-black' >Buttons</h1>
             <div className='p-4'>
                 <button className='text-[14px] bg-white-charcoal font-medium drop-shadow-lg hover:bg-silver-foil focus:bg-silver-foil'>Default</button>
