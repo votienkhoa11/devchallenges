@@ -33,6 +33,6 @@
     }
 
     .button-tab {
-        @apply w-[89px] h-[40px] focus:border-b-[4px] rounded-none text-[16px] font-semibold items-center p-0 border-blue-58
+        @apply w-[89px] h-[40px] focus:border-b-[4px] focus:pt-[4px] rounded-none text-[16px] font-semibold items-center p-0 border-blue-58
     } 
 }
