@@ -11,6 +11,7 @@ function TodomainView(props) {
         checkComplete,
     } = props;
 
+    const [selectedTab, setSelectedTab] = useState(0);
     const [value, setValue] = useState('');
 
     const handleSubmit = (e) => {
@@ -26,9 +27,9 @@ function TodomainView(props) {
     <div className='flex flex-col items-center h-screen w-screen pt-[32px]'>
         <h1 className='text-[24px] text-dark-charcoal font-bold'>#Todos</h1>
         <div className='w-[608px] flex flex-row mt-[50px] space-x-36 justify-center'>
-            <button className='button-tab'>All</button>
-            <button className='button-tab'>Active</button>  
-            <button className='button-tab'>Completed</button>
+            <button className='button-tab' onClick={() => setSelectedTab(0)}>All</button>
+            <button className='button-tab' onClick={() => setSelectedTab(1)}>Active</button>  
+            <button className='button-tab' onClick={() => setSelectedTab(2)}>Completed</button>
         </div>
         <div className='w-[608px] h-[1px] bg-gray-1'/>
         <form 
@@ -51,12 +52,30 @@ function TodomainView(props) {
         <div className='space-y-[24px] mt-[20px]'>
             {
                 todoList.map((value) => {
-                    return <Todo
+                    return (
+                        selectedTab === 0 ?
+                        <Todo
                             key={value.id}
                             todo={value}
                             deleteTodo={deleteTodo} 
                             checkComplete={checkComplete}
-                        />
+                        /> :
+                        selectedTab === 1 ?
+                            !value.completed &&
+                                <Todo
+                                    key={value.id}
+                                    todo={value}
+                                    deleteTodo={deleteTodo} 
+                                    checkComplete={checkComplete}
+                                /> :
+                            value.completed &&
+                                <Todo
+                                    key={value.id}
+                                    todo={value}
+                                    deleteTodo={deleteTodo} 
+                                    checkComplete={checkComplete}
+                                />
+                    )      
                 })
             }
         </div>
