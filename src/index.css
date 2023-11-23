@@ -11,6 +11,28 @@
     }
 
     button {
-        @apply px-4 py-2 rounded-md
+        @apply px-4 rounded-md gap-2 h-[36px]
     }
+
+    input {
+        @apply text-[16px] font-normal focus:outline-none
+    }
+
+    label {
+        @apply text-[14px] w-4 font-normal px-1 py-1
+    }
+
+    textarea {
+        @apply w-[200px] h-[150px] border-[1px] rounded-[8px] border-silver-old focus:outline-none px-2 py-2
+    }
+}
+
+@layer components {
+    .input-primary {
+        @apply flex align-middle items-center rounded-[8px] border-[1px] overflow-hidden px-2 py-2 gap-2 hover:border-dark-charcoal h-[56px] w-[200px]
+    }
+
+    .button-tab {
+        @apply w-[89px] h-[40px] focus:border-b-[4px] focus:pt-[4px] rounded-none text-[16px] font-semibold items-center p-0 border-blue-58
+    } 
 }
